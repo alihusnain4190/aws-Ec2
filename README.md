@@ -1,6 +1,6 @@
 
 # AWS security group
-  We are going to SSH from instance A to instance B and Instance B to instance A. instance 1 have SG-1 and instance 2 have SG-2
+  We are going to SSH from instance A to instance B and Instance B to instance A. instance A have SG-1 and instance B have SG-2
   ![sg](https://user-images.githubusercontent.com/59732833/182826586-b1ebd1bb-6801-4910-9920-9d7977e0ee7f.png)
 
 
