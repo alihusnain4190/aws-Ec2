@@ -33,3 +33,29 @@ Step 5
   if you go to configration and go to permission you can see we have 3action and 2 resources
   
   ![image](https://user-images.githubusercontent.com/59732833/184140081-948f48bc-5df3-46db-8c3c-58ba2db23977.png)
+
+
+
+
+
+
+
+# Synchronous Function 
+
+If you want to run function syncronus you have to use this coommand 
+ ### Use this one to get string https://www.base64encode.org/
+ 
+ aws lambda invoke --function-name my-function  --payload string  { response.json}
+
+If you want to see log then use below one commnad
+
+ aws lambda invoke --function-name myFunction out --log-type Tail
+
+
+
+# Asynchronus Function 
+ ![image](https://user-images.githubusercontent.com/59732833/184148964-984acdda-0bd6-4bc7-a11b-315d17522be2.png)
+ 
+ 
+ ![image](https://user-images.githubusercontent.com/59732833/184149047-4c6ad120-1713-4d23-9612-4d4ee8c8ed1e.png)
+
