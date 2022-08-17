@@ -1,0 +1,50 @@
+# CROSS ACCOUNT S3 ACCESS
+#### 
+# step 1
+
+  create a policy in Account A
+    {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObject",
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket",
+                "s3:GetBucketVersioning"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+
+## Step create role and select AWS Account and give name of your account
+
+
+## step 3 create a bucket within Account A
+
+  
+## Step 4 Go to Account B
+Create Role with assume sts and attach to user
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Resource": "arn:aws:iam::673881955031:role/cross-account-role"
+        }
+    ]
+}
+
+
+Go to switch role and you will able to see the bucket within account A
+
+
+
